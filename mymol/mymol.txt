@@ -1,0 +1,29 @@
+++++++ MyMol Data Directory ++++++
+
+edited@2017/10/25 by WuLing
+
+please direct all questions to ling.wu@myhealthgene.com
+
+This directory contains the sub-directories containing source code, 
+raw data and standard data like below: 
+.
+├── dataload 	    --- contains all the source code information
+│   ├── chebi		--- contains all version of chebi-parser
+│   ├── drugbank           --- contains all version of drugbank-parser
+│   ├── pubchem	--- contains all version of pubchem-parser
+│   └── share		--- contains all version of share code
+├── dataraw         --- contains the raw data from different open database
+│   ├── chebi	        --- contains all version of chebi-rawd-ata
+│   └── pubchem      --- contains all version of pubchem-raw-data
+├── datastore       --- contains the standard data extracted from dataraw
+│   ├── chebi           --- contains all version of chebi-standard-data
+│   └── pubchem    --- contains all version of pubchem-standard-data
+└── docs            --- contains the introduction of moduls
+    ├── chebi.txt	              --- the chebi-parser documentation	
+    └── mymol.txt	--- myMol data directory introduction
+    
+package dependency
+1. rdkit
+
+++++++ MyMol Data Directory ++++++
+

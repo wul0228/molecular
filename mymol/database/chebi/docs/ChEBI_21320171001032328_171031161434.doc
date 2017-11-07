@@ -1,0 +1,73 @@
+++++++ chebi Documentation ++++++
+
+edited@2017/11/06
+
+please direct all questions to ling.wu@myhealthgene.com
+
+1. brief introduction of fileds
+
+INN --- 
+Star ---
+ital ---
+Mass ---
+InChI ---
+arrow
+SMILES
+locant
+Charge
+stereo
+element
+ChEBI_ID
+Formulae
+InChIKey
+Synonyms
+notequal/
+Definition
+ChEBI_Name
+BRAND_Names
+IUPAC_Names
+greaterthan/
+greaterequal/
+Last_Modified
+Standard_SMILES
+Monoisotopic_Mass
+Secondary_ChEBI_ID
+CAS_Registry_Numbers
+Gmelin_Registry_Numbers
+Beilstein_Registry_Numbers
+
+HMDB_Database_Links
+COMe_Database_Links
+Rhea_Database_Links
+YMDB_Database_Links
+LINCS_Database_Links
+RESID_Database_Links
+ECMDB_Database_Links
+IntEnz_Database_Links
+PubMed_Citation_Links
+Patent_Database_Links
+IntAct_Database_Links
+MolBase_Database_Links
+MetaCyc_Database_Links
+UniProt_Database_Links
+PubChem_Database_Links
+KNApSAcK_Database_Links
+Agricola_Citation_Links
+Reactome_Database_Links
+DrugBank_Database_Links
+PDBeChem_Database_Links
+SABIO-RK_Database_Links
+BioModels_Database_Links
+Wikipedia_Database_Links
+KEGG_DRUG_Database_Links
+CiteXplore_Citation_Links
+KEGG_GLYCAN_Database_Links
+ArrayExpress_Database_Links
+KEGG_COMPOUND_Database_Links
+UM-BBD_compID_Database_Links
+PubMed_Central_Citation_Links
+LIPID_MAPS_class_Database_Links
+Chinese_Abstracts_Citation_Links
+LIPID_MAPS_instance_Database_Links
+
+++++++ chebi  Documentation ++++++
