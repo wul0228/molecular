@@ -399,36 +399,11 @@ def insertData(storedir):
         json.dump(errorInsert,wf,indent=2)
 
 
-def insertUpdatedData(updated_storedir): 
+def insertUpdatedData(latest_file): 
     '''
     this function is to generate a  new collection in mongodb PubChem  with updated date and the old
-    updated_storedir -- the directory  store  updated data
+    latest_file -- the file record the latest file names in newest version
     '''
-    # before insert, generate the contained files in new edition
-    update_file_heads = dict()
-
-    for filename in listdir(updated_storedir):
-
-        head = filename.split('_213')[0].strip()
-
-        update_file_heads[head] = filename
-
-        # get the latest .files file that contain the latest files name in mongodb 
-    filenames = [name for name in listdir(pubchem_db) if name.endswith('.files')]
-
-    latest = sorted(filenames,key=lambda x:x.split('Compound_')[1].strip())[-1]
-        
-    latest_file = json.load(open(pjoin(pubchem_db,latest)))
-
-        # update the latest  files   with  updated  file
-    for head ,name in update_file_heads.items():
-
-        latest_file[head] = name
-
-    with open(pjoin(pubchem_db,'Compound_{}.files').format(datetime.now().strftime('%y%m%d')),'w') as wf:
-
-        json.dump(latest_file,wf,indent=2)
-    
     # update mongodb ,create new edition
     
     # connect to db to insert
@@ -504,10 +479,19 @@ def updateData():
     # get all file name 
     filenames = ftp.nlst()
 
+    filenames.remove('README-Compound-SDF')
+
     #  mark the number of file
     filesum = len(filenames)
 
     num = 0
+
+    # create a dir to store updated data
+    updated_data_raw  = pjoin(dataraw,'pubchem_update_{}'.format(today))
+    updated_data_store  = pjoin(datastore,'pubchem_update_{}'.format(today))
+
+    createDir(updated_data_raw)
+    createDir(updated_data_store)
 
     # process break after all the file's update date checked
     while num < filesum:
@@ -539,13 +523,6 @@ def updateData():
 
                 if new:
 
-                    # create a dir to store updated data
-                    updated_data_raw  = pjoin(dataraw,'pubchem_update_{}'.format(today))
-                    updated_data_store  = pjoin(datastore,'pubchem_update_{}'.format(today))
-
-                    createDir(updated_data_raw)
-                    createDir(updated_data_store)
-
                     # download new edition one by one
                     downloadOne(ftp,name,updated_data_raw)
 
@@ -558,7 +535,7 @@ def updateData():
 
         except Exception ,e:
             
-            print e
+            # print e
              # because too many people connet the site at the same time , so report the 421 error 
             # print 'closing control connection , try again !'
 
@@ -566,10 +543,11 @@ def updateData():
             ftp = connectFTP(**pubchem_ftp_infos)
 
     # save the updated log file
-    with open(pjoin(pubchem_load,'pubchem_new.log'),'w') as wf:
+    with open(pjoin(pubchem_load,'pubchem.log'),'w') as wf:
 
         json.dump(pubchem_log,wf,indent=2)
 
+    # extract updated data in batch
     if new:
 
         for filename in listdir(updated_data_raw):
@@ -581,19 +559,49 @@ def updateData():
             # if no result ,redownload and repeat 
             if not  result:
 
-                downloadOne(ftp,filename,updated_data_raw)
+                downloadOne(connectFTP(**pubchem_ftp_infos),filename,updated_data_raw)
 
                 standarData(filepath,updated_data_store)
 
-            print '{} in datastore updated !'.format(name)
-
-            return updated_data_store
+            print '{} in datastore updated !'.format(filename)
                      
     print ' pubchem updated completed !'
 
-    ftp.quit()
+    return updated_data_store
 
-def choseDown(choice = 'update'):
+def createNewVersion(updated_storedir):
+    '''
+    this function is to create a new .files in database/pubchem/doc/  to record the newest  version
+    updated_storedir -- the directory  store  updated data
+    '''
+        # before insert, generate the contained files in new edition
+    update_file_heads = dict()
+
+    for filename in listdir(updated_storedir):
+
+        head = filename.split('_213')[0].strip()
+
+        update_file_heads[head] = filename
+
+        # get the latest .files file that contain the latest files name in mongodb 
+    filenames = [name for name in listdir(pubchem_db) if name.endswith('.files')]
+
+    latest = sorted(filenames,key=lambda x:x.split('Compound_')[1].strip())[-1]
+        
+    latest_file = json.load(open(pjoin(pubchem_db,latest)))
+
+        # update the latest  files   with  updated  file
+    for head ,name in update_file_heads.items():
+
+        latest_file[head] = name
+
+    with open(pjoin(pubchem_db,'Compound_{}.files').format(datetime.now().strftime('%y%m%d')),'w') as wf:
+
+        json.dump(latest_file,wf,indent=2)
+
+    return latest_file
+
+def choseDown(choice = 'update',insert = False):
     
     if choice == 'update':
 
@@ -601,7 +609,11 @@ def choseDown(choice = 'update'):
 
         if updated_data_store:
 
-            insertUpdatedData(updated_data_store)
+            createNewVersion(updated_data_store)
+
+            if insert:
+
+             insertUpdatedData(latest_file)
 
     elif choice == 'download':
 
@@ -609,9 +621,12 @@ def choseDown(choice = 'update'):
 
         storedir = extractData(rawdir)
 
-        insertData(storedir)
+        if insert:
+
+            insertData(storedir)
 
     elif choice == 'select':
+
         selectData()  
 
     else:
@@ -633,3 +648,4 @@ def main():
 if __name__ == '__main__':
 
     main()
+   
