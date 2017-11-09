@@ -1,0 +1,21 @@
+--2017-11-09 11:39:41--  https://www.drugbank.ca/releases/5-0-9/downloads/all-full-database
+正在解析主机 www.drugbank.ca (www.drugbank.ca)... 104.25.100.25, 104.25.101.25, 2400:cb00:2048:1::6819:6519, ...
+正在连接 www.drugbank.ca (www.drugbank.ca)|104.25.100.25|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 401 Unauthorized
+再次使用存在的到 www.drugbank.ca:443 的连接。
+已发出 HTTP 请求，正在等待回应... 302 Found
+位置：https://drugbank.s3-us-west-2.amazonaws.com/public_downloads/downloads/000/001/464/original/drugbank_all_full_database.xml.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJTZC3DSCEEG75A6Q%2F20171109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20171109T033942Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=a38c14c910d8c91b039903d0edad97a4d5196b8b8ce298e9681f813f8d78e9b4 [跟随至新的 URL]
+--2017-11-09 11:39:42--  https://drugbank.s3-us-west-2.amazonaws.com/public_downloads/downloads/000/001/464/original/drugbank_all_full_database.xml.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJTZC3DSCEEG75A6Q%2F20171109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20171109T033942Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=a38c14c910d8c91b039903d0edad97a4d5196b8b8ce298e9681f813f8d78e9b4
+正在解析主机 drugbank.s3-us-west-2.amazonaws.com (drugbank.s3-us-west-2.amazonaws.com)... 54.231.184.229
+正在连接 drugbank.s3-us-west-2.amazonaws.com (drugbank.s3-us-west-2.amazonaws.com)|54.231.184.229|:443... 失败：连接超时。
+重试中。
+
+--2017-11-09 11:41:51--  (尝试次数： 2)  https://drugbank.s3-us-west-2.amazonaws.com/public_downloads/downloads/000/001/464/original/drugbank_all_full_database.xml.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJTZC3DSCEEG75A6Q%2F20171109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20171109T033942Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=a38c14c910d8c91b039903d0edad97a4d5196b8b8ce298e9681f813f8d78e9b4
+正在连接 drugbank.s3-us-west-2.amazonaws.com (drugbank.s3-us-west-2.amazonaws.com)|54.231.184.229|:443... 失败：连接超时。
+重试中。
+
+--2017-11-09 11:44:00--  (尝试次数： 3)  https://drugbank.s3-us-west-2.amazonaws.com/public_downloads/downloads/000/001/464/original/drugbank_all_full_database.xml.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJTZC3DSCEEG75A6Q%2F20171109%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20171109T033942Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=a38c14c910d8c91b039903d0edad97a4d5196b8b8ce298e9681f813f8d78e9b4
+正在连接 drugbank.s3-us-west-2.amazonaws.com (drugbank.s3-us-west-2.amazonaws.com)|54.231.184.229|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 403 Forbidden
+2017-11-09 11:44:01 错误 403：Forbidden。
+

@@ -11,6 +11,7 @@ import sys
 reload(sys)
 sys.path.append('..')
 sys.setdefaultencoding = ('utf-8')
+import copy
 import requests
 import xmltodict
 from share.config_v1 import *
@@ -81,163 +82,118 @@ def downloadData():
 
     return  new_file_path
 
-def extractDate(new_file_path):
+def extractData(new_file_path):
 
-    # filename = psplit(new_file_path)[1].strip().split('.xml.zip')[0].strip()
-    # # gunzip file
+    filename = psplit(new_file_path)[1].strip().split('.xml.zip')[0].strip()
+    # gunzip file
     # filedir = new_file_path.split('.zip')[0].strip()
 
-    # unzip = 'unzip {} -d {}'.format(new_file_path,drugbank_raw)
+    unzip = 'unzip {} -d {}'.format(new_file_path,drugbank_raw)
 
-    # os.popen(unzip)
+    os.popen(unzip)
 
-    # # raname
-    # command = 'mv  {}/"full database.xml"  {}/full_database.xml'.format(drugbank_raw,drugbank_raw)
+    # raname
 
-    # os.popen(command)
-    #--------------------------------------------------------------------------------------------------------
-    # parser tree
-    tree = et.parse(open(pjoin(drugbank_raw,'full_database.xml')))
+    filepath = pjoin(drugbank_raw,'{}.xml'.format(filename))
 
-    root = tree.getroot()
+    command = 'mv  {}/"full database.xml"  {}'.format(drugbank_raw,filepath)
+
+    os.popen(command)
+   
+    # parse tree
+    tree = parse(open(filepath))
+
+    # the only key in tree dict is drugbank
+    db = tree["drugbank"]
+
+    version = db["@version"]
+
+    exported = db["@exported-on"]
+
+    drugs = db['drug']
+
+    drug_store = pjoin(drugbank_store,filename)
+
+    createDir(drug_store)
 
     n = 0
 
-    print len(root.getchildren())
+    for drug in drugs:
 
-    for child in root.getchildren()[:1]:
-        parseDrug(child)
+        stand_drug = standarData(drug)
 
+        with open(pjoin(drug_store,'drug_{}.json'.format(str(n))),'w') as wf:
 
+            json.dump(stand_drug,wf,indent=2)
 
-        # f = open(pjoin(drugbank_store,'tree_{}.txt'.format(n)),'w')
-        
-        # drug_dict = parseNode(child)
-        
-        # f.write(str(drug_dict))
+        n += 1
+        print n 
 
-        # f.close()
+    return drug_store
 
-        # n += 1
-def parseDrug(node):
+def standarData(drug):
 
-    tree = dict()
+    equal = False
 
-    for child in node.getchildren():
+    start = drug
 
-        tag = child.tag.split('{http://www.drugbank.ca}')[1].strip()
+    while not equal :
 
-        text = child.text
+        a = deBlankDict(start)
 
-        if tag not in tree:
+        b = deBlankDict(a)
 
-            tree[tag] = text
-
+        if b == a:
+            equal = True 
+            end = b
         else:
-            tag_val = tree[tag]
-            if not isinstance(tag_val,list):
-                tree[tag] = [tag_val]
-            tree[tag].append(text)
+            start = b
 
+    return end
 
-    with open('./test.json','w') as wf:
-        json.dump(tree,wf,indent=2)
-    print len(tree.keys())
+def insertData(storedir):
 
-def parseNode(node):
+    conn = MongoClient('127.0.0.1',27017)
 
-    tree = {}
+    db = conn.DrugBank
 
-    for child in node.getchildren():
+    collection_name = psplit(storedir)[1].strip().replace('-','')
 
-        child_tag = child.tag .split('{http://www.drugbank.ca}')[1].strip()
-        child_attr = child.attrib
-        child_text = child.text.strip() if child.text is not None else ''  
-        child_tree = parseNode(child)
+    collection = db.collection_name
+    
+    for filename in listdir(storedir):
 
-        if not child_tree:
-            child_dict = createDict(child_tag,child_text,child_attr)
-        else:
-            child_dict = createDict(child_tag,child_tree,child_attr)
+        filepath = pjoin(storedir,filename)
 
-        if child_tag not in tree:
-            tree.update(child_dict)
-            continue
+        drug = json.load(open(filepath))
 
-        atag = '@' + child_tag
-        atree = tree[child_tag]
-   
-        if not isinstance(atree,list):
-            if not isinstance(atree,dict):
-                atree = {}
-            if atag  in tree:
-                atree['#' + child_tag] = tree[atag]
-                del tree[atag]
+        drug['CREATED_TIME'] = datetime.now()
 
-            tree[child_tag] = [atree]
+        collection.insert(drug)
 
-        if child_attr:
-            child_tree['#' +child_tag] = child_attr
+    db.collection_name.rename(collection_name )
 
-        tree[child_tag].append(child_tree)
-
-    return tree
-
-def createDict(tag,value,attr=None):
-
-    dic = {tag : value}
-
-    if attr:
-
-        atag = '@' + tag
-
-        aattr = {}
-
-        for key,val in attr.items():
-
-            aattr[key] = val
-
-        dic[atag] = aattr
-
-        del atag
-        del aattr
-
-    return dic
-
-def deblank(dic):
-
-    for key,val in dic.items():
-
-        if not val:
-
-            dic.pop(key)
-
-        elif isinstance(val,dict) and len(val.keys()) ==1:
-
-
-            val_key = val.keys()[0]
-
-            val_val = val[val_key]
-            dic.pop(key)
-
-            dic.update({val_key:val_val})
-
-    return dic
-
-def standarData():
-    pass
-
-def insertData():
-    pass
+    print 'insertData completed !'
 
 def selectData():
-    pass
+    '''
+    this function is set to select data from mongodb
+    '''
+    conn = MongoClient('127.0.0.1',27017)
 
+    db = conn.DrugBank
+
+    colnamehead = 'drugbank'
+
+    querykey = 'name'
+
+    dataFromDB(db,colnamehead,querykey,queryvalue=None)
+    
 def updateData():
     '''
     this function is to check the edition existed and update or not
     '''
-    latest_edition = json.load(open(pjoin(drugbank_load,'drugbank.log')))[-1][0].rsplit('-',1)[0].strip()
+    latest_edition = json.load(open(pjoin(drugbank_load,'drugbank.log')))[-1][0].strip()
 
     (download_url,releases) = getWebPage()
 
@@ -245,7 +201,7 @@ def updateData():
 
         choseDown(choice = 'download')
 
-        drugbank_log .append((latest_edition,today,os.path.abspath(__file__)))
+        drugbank_log .append((releases,today,os.path.abspath(__file__)))
 
         with open(pjoin(dataload,'drugbank.log'),'w') as wf:
             json.dump(drugbank_log,wf,indent=2)
@@ -267,11 +223,11 @@ def choseDown(choice = 'update'):
 
     elif choice == 'download':
 
-        save_file_path = downloadData()
+        save = downloadData()
 
-        store_file_path  = extractData(save_file_path)
+        store  = extractData(save)
 
-        insertData(str(store_file_path))
+        insertData(store)
 
     elif choice == 'select':
 
@@ -283,7 +239,7 @@ def main():
 
     tips = '''
     Download : 1
-    Update : 2def insertData():
+    Update : 2
     Select : 3
     '''
     index = raw_input(tips)
@@ -293,16 +249,4 @@ def main():
     choseDown(choice =chose[index])
 
 if __name__ == '__main__':
-    # main()
-    extractDate('/home/user/project/molecular/mymol/dataraw/drugbank/drugbank_5-0-9_171102161331.xml.zip')
-
-    # f = eval(open(os.path.join(drugbank_store,'tree_0.txt')).read())
-
-    # dic = dict()
-
-    # for key,val in f.items():
-
-    #     dic[key] = val
-
-    # with open(os.path.join(drugbank_store,'dic_0.json'),'w') as wf:
-    #     json.dump(dic,wf,indent=2)
+    main()

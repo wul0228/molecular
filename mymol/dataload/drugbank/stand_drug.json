@@ -1,0 +1,2268 @@
+{
+  "unii": "Y43GF64R34", 
+  "classification": {
+    "kingdom": "Organic Compounds", 
+    "direct-parent": "Peptides", 
+    "subclass": "Amino Acids, Peptides, and Analogues", 
+    "superclass": "Organic Acids", 
+    "class": "Carboxylic Acids and Derivatives"
+  }, 
+  "sequence": {
+    "#text": ">DB00001 sequence\nLVYTDCTESGQNLCLCEGSNVCGQGNKCILGSDGEKNQCVTGEGTPKPQSHNDGDFEEIP\nEEYLQ", 
+    "@format": "FASTA"
+  }, 
+  "@updated": "2016-08-17", 
+  "external-link": [
+    {
+      "url": "http://www.rxlist.com/cgi/generic/lepirudin.htm", 
+      "resource": "RxList"
+    }, 
+    {
+      "url": "http://www.drugs.com/cdi/lepirudin.html", 
+      "resource": "Drugs.com"
+    }
+  ], 
+  "product": {
+    "started-marketing-on": "2000-01-31", 
+    "name": "Refludan", 
+    "over-the-counter": "false", 
+    "generic": "false", 
+    "country": "Canada", 
+    "route": "Intravenous", 
+    "ended-marketing-on": "2013-07-26", 
+    "dosage-form": "Powder, for solution", 
+    "source": "DPD", 
+    "labeller": "Bayer", 
+    "dpd-id": "02240996", 
+    "strength": "50 mg", 
+    "approved": "true"
+  }, 
+  "mixture": [
+    {
+      "name": "Refludan", 
+      "ingredients": "Lepirudin"
+    }
+  ], 
+  "pathway": {
+    "category": "drug_action", 
+    "name": "Lepirudin Action Pathway", 
+    "drug": [
+      {
+        "drugbank-id": "DB00001", 
+        "name": "Lepirudin"
+      }, 
+      {
+        "drugbank-id": "DB01022", 
+        "name": "Phylloquinone"
+      }, 
+      {
+        "drugbank-id": "DB01373", 
+        "name": "Calcium"
+      }
+    ], 
+    "smpdb-id": "SMP00278", 
+    "uniprot-id": [
+      "P00734", 
+      "P00748", 
+      "P02452", 
+      "P03952", 
+      "P03951", 
+      "P00740", 
+      "P00451", 
+      "P12259", 
+      "P00742", 
+      "P02671", 
+      "P02675", 
+      "P02679", 
+      "P00488", 
+      "P05160", 
+      "P00747", 
+      "P00750", 
+      "P08709", 
+      "P13726", 
+      "Q9BQB6", 
+      "P38435"
+    ]
+  }, 
+  "dosage": [
+    {
+      "route": "Intravenous", 
+      "strength": "20 mg", 
+      "form": "Injection, solution, concentrate"
+    }, 
+    {
+      "route": "Intravenous", 
+      "strength": "50 mg", 
+      "form": "Injection, solution, concentrate"
+    }, 
+    {
+      "route": "Intravenous", 
+      "strength": "50 mg", 
+      "form": "Powder, for solution"
+    }
+  ], 
+  "property": [
+    {
+      "source": "Otto, A. & Seckler, R. Eur. J. Biochem. 202:67-73 (1991)", 
+      "kind": "Melting Point", 
+      "value": "65 \u00b0C"
+    }, 
+    {
+      "kind": "Hydrophobicity", 
+      "value": "-0.777"
+    }, 
+    {
+      "kind": "Isoelectric Point", 
+      "value": "4.04"
+    }, 
+    {
+      "kind": "Molecular Weight", 
+      "value": "6963.425"
+    }, 
+    {
+      "kind": "Molecular Formula", 
+      "value": "C287H440N80O110S6"
+    }
+  ], 
+  "manufacturer": {
+    "#text": "Bayer healthcare pharmaceuticals inc", 
+    "@generic": "false"
+  }, 
+  "category": [
+    {
+      "category": "Amino Acids, Peptides, and Proteins", 
+      "mesh-id": "D000602"
+    }, 
+    {
+      "category": "Anticoagulants", 
+      "mesh-id": "D000925"
+    }, 
+    {
+      "category": "Antithrombin Proteins", 
+      "mesh-id": "D058833"
+    }, 
+    {
+      "category": "Antithrombins", 
+      "mesh-id": "D000991"
+    }, 
+    {
+      "category": "Blood and Blood Forming Organs"
+    }, 
+    {
+      "category": "Cardiovascular Agents", 
+      "mesh-id": "D002317"
+    }, 
+    {
+      "category": "Chemical Actions and Uses", 
+      "mesh-id": "D020164"
+    }, 
+    {
+      "category": "Enzyme Inhibitors", 
+      "mesh-id": "D004791"
+    }, 
+    {
+      "category": "Fibrin Modulating Agents", 
+      "mesh-id": "D050299"
+    }, 
+    {
+      "category": "Fibrinolytic Agents", 
+      "mesh-id": "D005343"
+    }, 
+    {
+      "category": "Hematologic Agents", 
+      "mesh-id": "D006401"
+    }, 
+    {
+      "category": "Molecular Mechanisms of Pharmacological Action", 
+      "mesh-id": "D045504"
+    }, 
+    {
+      "category": "Peptides", 
+      "mesh-id": "D010455"
+    }, 
+    {
+      "category": "Pharmacologic Actions", 
+      "mesh-id": "D020228"
+    }, 
+    {
+      "category": "Protease Inhibitors", 
+      "mesh-id": "D011480"
+    }, 
+    {
+      "category": "Proteins", 
+      "mesh-id": "D011506"
+    }, 
+    {
+      "category": "Serine Proteinase Inhibitors", 
+      "mesh-id": "D015842"
+    }, 
+    {
+      "category": "Serpins", 
+      "mesh-id": "D015843"
+    }, 
+    {
+      "category": "Therapeutic Uses", 
+      "mesh-id": "D045506"
+    }
+  ], 
+  "group": "approved", 
+  "@created": "2005-06-13", 
+  "absorption": "Bioavailability is 100% following injection.", 
+  "general-references": {
+    "article": [
+      {
+        "pubmed-id": "16244762", 
+        "citation": "Smythe MA, Stephens JL, Koerber JM, Mattson JC: A comparison of lepirudin and argatroban outcomes. Clin Appl Thromb Hemost. 2005 Oct;11(4):371-4."
+      }, 
+      {
+        "pubmed-id": "16690967", 
+        "citation": "Tardy B, Lecompte T, Boelhen F, Tardy-Poncet B, Elalamy I, Morange P, Gruel Y, Wolf M, Francois D, Racadot E, Camarasa P, Blouch MT, Nguyen F, Doubine S, Dutrillaux F, Alhenc-Gelas M, Martin-Toutain I, Bauters A, Ffrench P, de Maistre E, Grunebaum L, Mouton C, Huisse MG, Gouault-Heilmann M, Lucke V: Predictive factors for thrombosis and major bleeding in an observational study in 181 patients with heparin-induced thrombocytopenia treated with lepirudin. Blood. 2006 Sep 1;108(5):1492-6. Epub 2006 May 11."
+      }, 
+      {
+        "pubmed-id": "16241940", 
+        "citation": "Lubenow N, Eichler P, Lietz T, Greinacher A: Lepirudin in patients with heparin-induced thrombocytopenia - results of the third prospective study (HAT-3) and a combined analysis of HAT-1, HAT-2, and HAT-3. J Thromb Haemost. 2005 Nov;3(11):2428-36."
+      }
+    ], 
+    "link": {
+      "url": "http://books.google.com/books?id=iadLoXoQkWEC&pg=PA440", 
+      "title": "Google books"
+    }
+  }, 
+  "drugbank-id": [
+    {
+      "@primary": "true", 
+      "#text": "DB00001"
+    }, 
+    "BTD00024", 
+    "BIOD00024"
+  ], 
+  "affected-organism": "Humans and other mammals", 
+  "state": "liquid", 
+  "packager": [
+    {
+      "url": "http://www.bayerhealthcare.com", 
+      "name": "Bayer Healthcare"
+    }, 
+    {
+      "url": "http://www.berlex.com", 
+      "name": "Berlex Labs"
+    }
+  ], 
+  "msds": "//s3-us-west-2.amazonaws.com/drugbank/msds/DB00001.pdf?1368416245", 
+  "metabolism": "Lepirudin is thought to be metabolized by release of amino acids via catabolic hydrolysis of the parent drug. However, con-clusive data are not available. About 48% of the administration dose is excreted in the urine which consists of unchanged drug (35%) and other fragments of the parent drug.", 
+  "pharmacodynamics": "Lepirudin is used to break up clots and to reduce thrombocytopenia. It binds to thrombin and prevents thrombus or clot formation. It is a highly potent, selective, and essentially irreversible inhibitor of thrombin and clot-bond thrombin. Lepirudin requires no cofactor for its anticoagulant action. Lepirudin is a recombinant form of hirudin, an endogenous anticoagulant found in medicinal leeches.", 
+  "description": "Lepirudin is identical to natural hirudin except for substitution of leucine for isoleucine at the N-terminal end of the molecule and the absence of a sulfate group on the tyrosine at position 63. It is produced via yeast cells. Bayer ceased the production of lepirudin (Refludan) effective May 31, 2012.", 
+  "pdb-entry": "4HIR", 
+  "price": {
+    "cost": {
+      "@currency": "USD", 
+      "#text": "273.19"
+    }, 
+    "description": "Refludan 50 mg vial", 
+    "unit": "vial"
+  }, 
+  "fda-label": "//s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB00001.pdf?1265924858", 
+  "half-life": "Approximately 1.3 hours", 
+  "cas-number": "138068-37-8", 
+  "ahfs-code": "20:12.04.12", 
+  "clearance": "* 164 ml/min [Healthy 18-60 yrs]\r\n* 139 ml/min [Healthy 65-80 yrs]\r\n* 61 ml/min [renal impaired]\r\n* 114 ml/min [HIT (Heparin-induced thrombocytopenia)]", 
+  "synonym": [
+    {
+      "#text": "Hirudin variant-1"
+    }, 
+    {
+      "#text": "Lepirudin recombinant"
+    }
+  ], 
+  "name": "Lepirudin", 
+  "mechanism-of-action": "Lepirudin forms a stable non-covalent complex with alpha-thrombin, thereby abolishing its ability to cleave fibrinogen and initiate the clotting cascade. The inhibition of thrombin prevents the blood clotting cascade.", 
+  "route-of-elimination": "Lepirudin is thought to be metabolized by release of amino acids via catabolic hydrolysis of the parent drug. About 48% of the administration dose is excreted in the urine which consists of unchanged drug (35%) and other fragments of the parent drug.", 
+  "external-identifier": [
+    {
+      "identifier": "11916", 
+      "resource": "Drugs Product Database (DPD)"
+    }, 
+    {
+      "identifier": "D06880", 
+      "resource": "KEGG Drug"
+    }, 
+    {
+      "identifier": "PA450195", 
+      "resource": "PharmGKB"
+    }, 
+    {
+      "identifier": "P01050", 
+      "resource": "UniProtKB"
+    }, 
+    {
+      "identifier": "DAP000541", 
+      "resource": "Therapeutic Targets Database"
+    }, 
+    {
+      "identifier": "Lepirudin", 
+      "resource": "Wikipedia"
+    }, 
+    {
+      "identifier": "CHEMBL1201666", 
+      "resource": "ChEMBL"
+    }
+  ], 
+  "@type": "biotech", 
+  "patent": {
+    "country": "United States", 
+    "expires": "2010-01-19", 
+    "pediatric-extension": "false", 
+    "number": "5180668", 
+    "approved": "1993-01-19"
+  }, 
+  "indication": "For the treatment of heparin-induced thrombocytopenia", 
+  "target": {
+    "known-action": "yes", 
+    "polypeptide": {
+      "specific-function": "Thrombin, which cleaves bonds after Arg and Lys, converts fibrinogen to fibrin and activates factors V, VII, VIII, XIII, and, in complex with thrombomodulin, protein C. Functions in blood homeostasis, inflammation and wound healing.", 
+      "locus": "11p11-q12", 
+      "general-function": "Thrombospondin receptor activity", 
+      "amino-acid-sequence": {
+        "#text": ">lcl|BSEQ0016004|Prothrombin\nMAHVRGLQLPGCLALAALCSLVHSQHVFLAPQQARSLLQRVRRANTFLEEVRKGNLEREC\nVEETCSYEEAFEALESSTATDVFWAKYTACETARTPRDKLAACLEGNCAEGLGTNYRGHV\nNITRSGIECQLWRSRYPHKPEINSTTHPGADLQENFCRNPDSSTTGPWCYTTDPTVRRQE\nCSIPVCGQDQVTVAMTPRSEGSSVNLSPPLEQCVPDRGQQYQGRLAVTTHGLPCLAWASA\nQAKALSKHQDFNSAVQLVENFCRNPDGDEEGVWCYVAGKPGDFGYCDLNYCEEAVEEETG\nDGLDEDSDRAIEGRTATSEYQTFFNPRTFGSGEADCGLRPLFEKKSLEDKTERELLESYI\nDGRIVEGSDAEIGMSPWQVMLFRKSPQELLCGASLISDRWVLTAAHCLLYPPWDKNFTEN\nDLLVRIGKHSRTRYERNIEKISMLEKIYIHPRYNWRENLDRDIALMKLKKPVAFSDYIHP\nVCLPDRETAASLLQAGYKGRVTGWGNLKETWTANVGKGQPSVLQVVNLPIVERPVCKDST\nRIRITDNMFCAGYKPDEGKRGDACEGDSGGPFVMKSPFNNRWYQMGIVSWGEGCDRDGKY\nGFYTHVFRLKKWIQKVIDQFGE", 
+        "@format": "FASTA"
+      }, 
+      "@source": "Swiss-Prot", 
+      "cellular-location": "Secreted", 
+      "molecular-weight": "70036.295", 
+      "signal-regions": "1-24", 
+      "chromosome-location": "11", 
+      "@id": "P00734", 
+      "go-classifier": [
+        {
+          "category": "component", 
+          "description": "extracellular space"
+        }, 
+        {
+          "category": "component", 
+          "description": "blood microparticle"
+        }, 
+        {
+          "category": "component", 
+          "description": "extracellular matrix"
+        }, 
+        {
+          "category": "component", 
+          "description": "Golgi lumen"
+        }, 
+        {
+          "category": "component", 
+          "description": "cytosol"
+        }, 
+        {
+          "category": "component", 
+          "description": "extracellular exosome"
+        }, 
+        {
+          "category": "component", 
+          "description": "extracellular region"
+        }, 
+        {
+          "category": "component", 
+          "description": "endoplasmic reticulum lumen"
+        }, 
+        {
+          "category": "component", 
+          "description": "plasma membrane"
+        }, 
+        {
+          "category": "function", 
+          "description": "thrombospondin receptor activity"
+        }, 
+        {
+          "category": "function", 
+          "description": "calcium ion binding"
+        }, 
+        {
+          "category": "function", 
+          "description": "serine-type endopeptidase activity"
+        }, 
+        {
+          "category": "function", 
+          "description": "growth factor activity"
+        }, 
+        {
+          "category": "function", 
+          "description": "receptor binding"
+        }, 
+        {
+          "category": "process", 
+          "description": "post-translational protein modification"
+        }, 
+        {
+          "category": "process", 
+          "description": "negative regulation of fibrinolysis"
+        }, 
+        {
+          "category": "process", 
+          "description": "regulation of blood coagulation"
+        }, 
+        {
+          "category": "process", 
+          "description": "negative regulation of platelet activation"
+        }, 
+        {
+          "category": "process", 
+          "description": "regulation of cell shape"
+        }, 
+        {
+          "category": "process", 
+          "description": "regulation of gene expression"
+        }, 
+        {
+          "category": "process", 
+          "description": "blood coagulation"
+        }, 
+        {
+          "category": "process", 
+          "description": "negative regulation of proteolysis"
+        }, 
+        {
+          "category": "process", 
+          "description": "platelet activation"
+        }, 
+        {
+          "category": "process", 
+          "description": "response to inactivity"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of blood coagulation"
+        }, 
+        {
+          "category": "process", 
+          "description": "response to wounding"
+        }, 
+        {
+          "category": "process", 
+          "description": "acute-phase response"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of cell growth"
+        }, 
+        {
+          "category": "process", 
+          "description": "blood coagulation, intrinsic pathway"
+        }, 
+        {
+          "category": "process", 
+          "description": "proteolysis"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of cell proliferation"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of protein phosphorylation"
+        }, 
+        {
+          "category": "process", 
+          "description": "cell surface receptor signaling pathway"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of collagen biosynthetic process"
+        }, 
+        {
+          "category": "process", 
+          "description": "cytosolic calcium ion homeostasis"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of phosphatidylinositol 3-kinase signaling"
+        }, 
+        {
+          "category": "process", 
+          "description": "cellular response to mechanical stimulus"
+        }, 
+        {
+          "category": "process", 
+          "description": "fibrinolysis"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of phospholipase C-activating G-protein coupled receptor signaling pathway"
+        }, 
+        {
+          "category": "process", 
+          "description": "leukocyte migration"
+        }, 
+        {
+          "category": "process", 
+          "description": "multicellular organismal development"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of reactive oxygen species metabolic process"
+        }, 
+        {
+          "category": "process", 
+          "description": "cellular protein metabolic process"
+        }, 
+        {
+          "category": "process", 
+          "description": "negative regulation of astrocyte differentiation"
+        }, 
+        {
+          "category": "process", 
+          "description": "peptidyl-glutamic acid carboxylation"
+        }, 
+        {
+          "category": "process", 
+          "description": "positive regulation of release of sequestered calcium ion into cytosol"
+        }
+      ], 
+      "pfam": [
+        {
+          "identifier": "PF00594", 
+          "name": "Gla"
+        }, 
+        {
+          "identifier": "PF00051", 
+          "name": "Kringle"
+        }, 
+        {
+          "identifier": "PF00089", 
+          "name": "Trypsin"
+        }, 
+        {
+          "identifier": "PF09396", 
+          "name": "Thrombin_light"
+        }
+      ], 
+      "synonym": [
+        "3.4.21.5", 
+        "Coagulation factor II"
+      ], 
+      "name": "Prothrombin", 
+      "external-identifier": [
+        {
+          "identifier": "HGNC:3535", 
+          "resource": "HUGO Gene Nomenclature Committee (HGNC)"
+        }, 
+        {
+          "identifier": "F2", 
+          "resource": "GenAtlas"
+        }, 
+        {
+          "identifier": "M17262", 
+          "resource": "GenBank Gene Database"
+        }, 
+        {
+          "identifier": "339641", 
+          "resource": "GenBank Protein Database"
+        }, 
+        {
+          "identifier": "2362", 
+          "resource": "Guide to Pharmacology"
+        }, 
+        {
+          "identifier": "P00734", 
+          "resource": "UniProtKB"
+        }, 
+        {
+          "identifier": "THRB_HUMAN", 
+          "resource": "UniProt Accession"
+        }
+      ], 
+      "theoretical-pi": "5.7", 
+      "gene-sequence": {
+        "#text": ">lcl|BSEQ0016005|Prothrombin (F2)\nATGGCGCACGTCCGAGGCTTGCAGCTGCCTGGCTGCCTGGCCCTGGCTGCCCTGTGTAGC\nCTTGTGCACAGCCAGCATGTGTTCCTGGCTCCTCAGCAAGCACGGTCGCTGCTCCAGCGG\nGTCCGGCGAGCCAACACCTTCTTGGAGGAGGTGCGCAAGGGCAACCTGGAGCGAGAGTGC\nGTGGAGGAGACGTGCAGCTACGAGGAGGCCTTCGAGGCTCTGGAGTCCTCCACGGCTACG\nGATGTGTTCTGGGCCAAGTACACAGCTTGTGAGACAGCGAGGACGCCTCGAGATAAGCTT\nGCTGCATGTCTGGAAGGTAACTGTGCTGAGGGTCTGGGTACGAACTACCGAGGGCATGTG\nAACATCACCCGGTCAGGCATTGAGTGCCAGCTATGGAGGAGTCGCTACCCACATAAGCCT\nGAAATCAACTCCACTACCCATCCTGGGGCCGACCTACAGGAGAATTTCTGCCGCAACCCC\nGACAGCAGCACCACGGGACCCTGGTGCTACACTACAGACCCCACCGTGAGGAGGCAGGAA\nTGCAGCATCCCTGTCTGTGGCCAGGATCAAGTCACTGTAGCGATGACTCCACGCTCCGAA\nGGCTCCAGTGTGAATCTGTCACCTCCATTGGAGCAGTGTGTCCCTGATCGGGGGCAGCAG\nTACCAGGGGCGCCTGGCGGTGACCACACATGGGCTCCCCTGCCTGGCCTGGGCCAGCGCA\nCAGGCCAAGGCCCTGAGCAAGCACCAGGACTTCAACTCAGCTGTGCAGCTGGTGGAGAAC\nTTCTGCCGCAACCCAGACGGGGATGAGGAGGGCGTGTGGTGCTATGTGGCCGGGAAGCCT\nGGCGACTTTGGGTACTGCGACCTCAACTATTGTGAGGAGGCCGTGGAGGAGGAGACAGGA\nGATGGGCTGGATGAGGACTCAGACAGGGCCATCGAAGGGCGTACCGCCACCAGTGAGTAC\nCAGACTTTCTTCAATCCGAGGACCTTTGGCTCGGGAGAGGCAGACTGTGGGCTGCGACCT\nCTGTTCGAGAAGAAGTCGCTGGAGGACAAAACCGAAAGAGAGCTCCTGGAATCCTACATC\nGACGGGCGCATTGTGGAGGGCTCGGATGCAGAGATCGGCATGTCACCTTGGCAGGTGATG\nCTTTTCCGGAAGAGTCCCCAGGAGCTGCTGTGTGGGGCCAGCCTCATCAGTGACCGCTGG\nGTCCTCACCGCCGCCCACTGCCTCCTGTACCCGCCCTGGGACAAGAACTTCACCGAGAAT\nGACCTTCTGGTGCGCATTGGCAAGCACTCCCGCACCAGGTACGAGCGAAACATTGAAAAG\nATATCCATGTTGGAAAAGATCTACATCCACCCCAGGTACAACTGGCGGGAGAACCTGGAC\nCGGGACATTGCCCTGATGAAGCTGAAGAAGCCTGTTGCCTTCAGTGACTACATTCACCCT\nGTGTGTCTGCCCGACAGGGAGACGGCAGCCAGCTTGCTCCAGGCTGGATACAAGGGGCGG\nGTGACAGGCTGGGGCAACCTGAAGGAGACGTGGACAGCCAACGTTGGTAAGGGGCAGCCC\nAGTGTCCTGCAGGTGGTGAACCTGCCCATTGTGGAGCGGCCGGTCTGCAAGGACTCCACC\nCGGATCCGCATCACTGACAACATGTTCTGTGCTGGTTACAAGCCTGATGAAGGGAAACGA\nGGGGATGCCTGTGAAGGTGACAGTGGGGGACCCTTTGTCATGAAGAGCCCCTTTAACAAC\nCGCTGGTATCAAATGGGCATCGTCTCATGGGGTGAAGGCTGTGACCGGGATGGGAAATAT\nGGCTTCTACACACATGTGTTCCGCCTGAAGAAGTGGATACAGAAGGTCATTGATCAGTTT\nGGAGAGTAG", 
+        "@format": "FASTA"
+      }, 
+      "gene-name": "F2", 
+      "organism": {
+        "@ncbi-taxonomy-id": "9606", 
+        "#text": "Human"
+      }
+    }, 
+    "name": "Prothrombin", 
+    "references": {
+      "article": [
+        {
+          "pubmed-id": "10505536", 
+          "citation": "Turpie AG: Anticoagulants in acute coronary syndromes. Am J Cardiol. 1999 Sep 2;84(5A):2M-6M."
+        }, 
+        {
+          "pubmed-id": "10912644", 
+          "citation": "Warkentin TE: Venous thromboembolism in heparin-induced thrombocytopenia. Curr Opin Pulm Med. 2000 Jul;6(4):343-51."
+        }, 
+        {
+          "pubmed-id": "11055889", 
+          "citation": "Eriksson BI: New therapeutic options in deep vein thrombosis prophylaxis. Semin Hematol. 2000 Jul;37(3 Suppl 5):7-9."
+        }, 
+        {
+          "pubmed-id": "11467439", 
+          "citation": "Fabrizio MC: Use of ecarin clotting time (ECT) with lepirudin therapy in heparin-induced thrombocytopenia and cardiopulmonary bypass. J Extra Corpor Technol. 2001 May;33(2):117-25."
+        }, 
+        {
+          "pubmed-id": "11807012", 
+          "citation": "Szaba FM, Smiley ST: Roles for thrombin and fibrin(ogen) in cytokine/chemokine production and macrophage adhesion in vivo. Blood. 2002 Feb 1;99(3):1053-9."
+        }, 
+        {
+          "pubmed-id": "11752352", 
+          "citation": "Chen X, Ji ZL, Chen YZ: TTD: Therapeutic Target Database. Nucleic Acids Res. 2002 Jan 1;30(1):412-5."
+        }
+      ]
+    }, 
+    "action": "inhibitor", 
+    "organism": "Human", 
+    "id": "BE0000048"
+  }, 
+  "drug-interaction": [
+    {
+      "description": "The metabolism of Lepirudin can be increased when combined with St. John&#39;s Wort.", 
+      "drugbank-id": "DB01323", 
+      "name": "St. John's Wort"
+    }, 
+    {
+      "description": "The serum concentration of Alfuzosin can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00346", 
+      "name": "Alfuzosin"
+    }, 
+    {
+      "description": "The serum concentration of Cisapride can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00604", 
+      "name": "Cisapride"
+    }, 
+    {
+      "description": "Apixaban may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06605", 
+      "name": "Apixaban"
+    }, 
+    {
+      "description": "Dabigatran etexilate may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06695", 
+      "name": "Dabigatran etexilate"
+    }, 
+    {
+      "description": "Edoxaban may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09075", 
+      "name": "Edoxaban"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Rivaroxaban.", 
+      "drugbank-id": "DB06228", 
+      "name": "Rivaroxaban"
+    }, 
+    {
+      "description": "The serum concentration of Lovastatin can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00227", 
+      "name": "Lovastatin"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Omacetaxine mepesuccinate.", 
+      "drugbank-id": "DB04865", 
+      "name": "Omacetaxine mepesuccinate"
+    }, 
+    {
+      "description": "Urokinase may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00013", 
+      "name": "Urokinase"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Vorapaxar is combined with Lepirudin.", 
+      "drugbank-id": "DB09030", 
+      "name": "Vorapaxar"
+    }, 
+    {
+      "description": "The serum concentration of Midazolam can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00683", 
+      "name": "Midazolam"
+    }, 
+    {
+      "description": "The serum concentration of Pimozide can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01100", 
+      "name": "Pimozide"
+    }, 
+    {
+      "description": "The serum concentration of Simeprevir can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB06290", 
+      "name": "Simeprevir"
+    }, 
+    {
+      "description": "The serum concentration of Simvastatin can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00641", 
+      "name": "Simvastatin"
+    }, 
+    {
+      "description": "The serum concentration of Lepirudin can be decreased when it is combined with Tipranavir.", 
+      "drugbank-id": "DB00932", 
+      "name": "Tipranavir"
+    }, 
+    {
+      "description": "The serum concentration of Cabergoline can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00248", 
+      "name": "Cabergoline"
+    }, 
+    {
+      "description": "The serum concentration of Dihydroergotamine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00320", 
+      "name": "Dihydroergotamine"
+    }, 
+    {
+      "description": "The serum concentration of Ergotamine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00696", 
+      "name": "Ergotamine"
+    }, 
+    {
+      "description": "The serum concentration of Ergoloid mesylate can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01049", 
+      "name": "Ergoloid mesylate"
+    }, 
+    {
+      "description": "The serum concentration of Bromocriptine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01200", 
+      "name": "Bromocriptine"
+    }, 
+    {
+      "description": "The serum concentration of Ergonovine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01253", 
+      "name": "Ergonovine"
+    }, 
+    {
+      "description": "The serum concentration of Triazolam can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00897", 
+      "name": "Triazolam"
+    }, 
+    {
+      "description": "Hemin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB03404", 
+      "name": "Hemin"
+    }, 
+    {
+      "description": "The serum concentration of Ethinyl Estradiol can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00977", 
+      "name": "Ethinyl Estradiol"
+    }, 
+    {
+      "description": "The serum concentration of Mestranol can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01357", 
+      "name": "Mestranol"
+    }, 
+    {
+      "description": "The serum concentration of Estradiol can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00783", 
+      "name": "Estradiol"
+    }, 
+    {
+      "description": "The serum concentration of Estrone sulfate can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB04574", 
+      "name": "Estrone sulfate"
+    }, 
+    {
+      "description": "The serum concentration of Synthetic Conjugated Estrogens, A can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB09317", 
+      "name": "Synthetic Conjugated Estrogens, A"
+    }, 
+    {
+      "description": "The serum concentration of Estrogens, esterified can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB09381", 
+      "name": "Estrogens, esterified"
+    }, 
+    {
+      "description": "The serum concentration of Chlorotrianisene can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00269", 
+      "name": "Chlorotrianisene"
+    }, 
+    {
+      "description": "The serum concentration of Conjugated Equine Estrogens can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00286", 
+      "name": "Conjugated estrogens"
+    }, 
+    {
+      "description": "The serum concentration of Estramustine can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01196", 
+      "name": "Estramustine"
+    }, 
+    {
+      "description": "The serum concentration of Dienestrol can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00890", 
+      "name": "Dienestrol"
+    }, 
+    {
+      "description": "The serum concentration of Diethylstilbestrol can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00255", 
+      "name": "Diethylstilbestrol"
+    }, 
+    {
+      "description": "The serum concentration of Hexestrol can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB07931", 
+      "name": "Hexestrol"
+    }, 
+    {
+      "description": "The serum concentration of Methallenestril can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB13143", 
+      "name": "Methallenestril"
+    }, 
+    {
+      "description": "The serum concentration of Cyclosporine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00091", 
+      "name": "Cyclosporine"
+    }, 
+    {
+      "description": "The serum concentration of Lepirudin can be decreased when it is combined with Garlic.", 
+      "drugbank-id": "DB10532", 
+      "name": "Garlic"
+    }, 
+    {
+      "description": "The metabolism of Tacrolimus can be decreased when combined with Lepirudin.", 
+      "drugbank-id": "DB00864", 
+      "name": "Tacrolimus"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Pethidine.", 
+      "drugbank-id": "DB00454", 
+      "name": "Pethidine"
+    }, 
+    {
+      "description": "The serum concentration of Alprazolam can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00404", 
+      "name": "Alprazolam"
+    }, 
+    {
+      "description": "The serum concentration of Atorvastatin can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01076", 
+      "name": "Atorvastatin"
+    }, 
+    {
+      "description": "The serum concentration of Lepirudin can be decreased when it is combined with Boceprevir.", 
+      "drugbank-id": "DB08873", 
+      "name": "Boceprevir"
+    }, 
+    {
+      "description": "The metabolism of Lepirudin can be increased when combined with Carbamazepine.", 
+      "drugbank-id": "DB00564", 
+      "name": "Carbamazepine"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Clarithromycin can be decreased when used in combination with Lepirudin.", 
+      "drugbank-id": "DB01211", 
+      "name": "Clarithromycin"
+    }, 
+    {
+      "description": "The serum concentration of Delavirdine can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00705", 
+      "name": "Delavirdine"
+    }, 
+    {
+      "description": "Estrone may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00655", 
+      "name": "Estrone"
+    }, 
+    {
+      "description": "Genistein may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01645", 
+      "name": "Genistein"
+    }, 
+    {
+      "description": "Quinestrol may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04575", 
+      "name": "Quinestrol"
+    }, 
+    {
+      "description": "Synthetic Conjugated Estrogens, B may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09318", 
+      "name": "Synthetic Conjugated Estrogens, B"
+    }, 
+    {
+      "description": "Polyestradiol phosphate may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09369", 
+      "name": "Polyestradiol phosphate"
+    }, 
+    {
+      "description": "Zeranol may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11478", 
+      "name": "Zeranol"
+    }, 
+    {
+      "description": "Estriol may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04573", 
+      "name": "Estriol"
+    }, 
+    {
+      "description": "Bazedoxifene may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06401", 
+      "name": "Bazedoxifene"
+    }, 
+    {
+      "description": "S Equol may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11674", 
+      "name": "Equol"
+    }, 
+    {
+      "description": "Secoisolariciresinol may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12179", 
+      "name": "Secoisolariciresinol"
+    }, 
+    {
+      "description": "Promestriene may decrease the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12487", 
+      "name": "Promestriene"
+    }, 
+    {
+      "description": "The serum concentration of Nefazodone can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01149", 
+      "name": "Nefazodone"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Aprotinin.", 
+      "drugbank-id": "DB06692", 
+      "name": "Aprotinin"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Desogestrel.", 
+      "drugbank-id": "DB00304", 
+      "name": "Desogestrel"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Dydrogesterone.", 
+      "drugbank-id": "DB00378", 
+      "name": "Dydrogesterone"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Progesterone.", 
+      "drugbank-id": "DB00396", 
+      "name": "Progesterone"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Allylestrenol.", 
+      "drugbank-id": "DB01431", 
+      "name": "Allylestrenol"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Gestodene.", 
+      "drugbank-id": "DB06730", 
+      "name": "Gestodene"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Hydroxyprogesterone caproate.", 
+      "drugbank-id": "DB06789", 
+      "name": "Hydroxyprogesterone caproate"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Altrenogest.", 
+      "drugbank-id": "DB11372", 
+      "name": "Altrenogest"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Etonogestrel.", 
+      "drugbank-id": "DB00294", 
+      "name": "Etonogestrel"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Megestrol acetate.", 
+      "drugbank-id": "DB00351", 
+      "name": "Megestrol acetate"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Levonorgestrel.", 
+      "drugbank-id": "DB00367", 
+      "name": "Levonorgestrel"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Medroxyprogesterone acetate.", 
+      "drugbank-id": "DB00603", 
+      "name": "Medroxyprogesterone acetate"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Norethisterone.", 
+      "drugbank-id": "DB00717", 
+      "name": "Norethisterone"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Drospirenone.", 
+      "drugbank-id": "DB01395", 
+      "name": "Drospirenone"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Dienogest.", 
+      "drugbank-id": "DB09123", 
+      "name": "Dienogest"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Medrogestone.", 
+      "drugbank-id": "DB09124", 
+      "name": "Medrogestone"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Gestrinone.", 
+      "drugbank-id": "DB11619", 
+      "name": "Gestrinone"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Ethynodiol diacetate.", 
+      "drugbank-id": "DB00823", 
+      "name": "Ethynodiol diacetate"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Nomegestrol.", 
+      "drugbank-id": "DB11636", 
+      "name": "Nomegestrol"
+    }, 
+    {
+      "description": "The therapeutic efficacy of Lepirudin can be decreased when used in combination with Lynestrenol.", 
+      "drugbank-id": "DB12474", 
+      "name": "Lynestrenol"
+    }, 
+    {
+      "description": "The serum concentration of Riociguat can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB08931", 
+      "name": "Riociguat"
+    }, 
+    {
+      "description": "The serum concentration of Rosuvastatin can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01098", 
+      "name": "Rosuvastatin"
+    }, 
+    {
+      "description": "The serum concentration of Sildenafil can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00203", 
+      "name": "Sildenafil"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Temsirolimus.", 
+      "drugbank-id": "DB06287", 
+      "name": "Temsirolimus"
+    }, 
+    {
+      "description": "The metabolism of Diltiazem can be decreased when combined with Lepirudin.", 
+      "drugbank-id": "DB00343", 
+      "name": "Diltiazem"
+    }, 
+    {
+      "description": "The metabolism of Verapamil can be decreased when combined with Lepirudin.", 
+      "drugbank-id": "DB00661", 
+      "name": "Verapamil"
+    }, 
+    {
+      "description": "Pentosan Polysulfate may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00686", 
+      "name": "Pentosan Polysulfate"
+    }, 
+    {
+      "description": "The serum concentration of Amitriptyline can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00321", 
+      "name": "Amitriptyline"
+    }, 
+    {
+      "description": "The serum concentration of Protriptyline can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00344", 
+      "name": "Protriptyline"
+    }, 
+    {
+      "description": "The serum concentration of Mirtazapine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00370", 
+      "name": "Mirtazapine"
+    }, 
+    {
+      "description": "The serum concentration of Imipramine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00458", 
+      "name": "Imipramine"
+    }, 
+    {
+      "description": "The serum concentration of Nortriptyline can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00540", 
+      "name": "Nortriptyline"
+    }, 
+    {
+      "description": "The serum concentration of Trimipramine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00726", 
+      "name": "Trimipramine"
+    }, 
+    {
+      "description": "The serum concentration of Cyclobenzaprine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00924", 
+      "name": "Cyclobenzaprine"
+    }, 
+    {
+      "description": "The serum concentration of Doxepin can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01142", 
+      "name": "Doxepin"
+    }, 
+    {
+      "description": "The serum concentration of Desipramine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01151", 
+      "name": "Desipramine"
+    }, 
+    {
+      "description": "The serum concentration of Clomipramine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01242", 
+      "name": "Clomipramine"
+    }, 
+    {
+      "description": "The serum concentration of Amineptine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB04836", 
+      "name": "Amineptine"
+    }, 
+    {
+      "description": "The serum concentration of Esmirtazapine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB06678", 
+      "name": "Esmirtazapine"
+    }, 
+    {
+      "description": "The serum concentration of Dosulepin can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB09167", 
+      "name": "Dosulepin"
+    }, 
+    {
+      "description": "The serum concentration of Tianeptine can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB09289", 
+      "name": "Tianeptine"
+    }, 
+    {
+      "description": "The serum concentration of Opipramol can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB12930", 
+      "name": "Opipramol"
+    }, 
+    {
+      "description": "The serum concentration of Abacavir can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01048", 
+      "name": "Abacavir"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Cyclophosphamide.", 
+      "drugbank-id": "DB00531", 
+      "name": "Cyclophosphamide"
+    }, 
+    {
+      "description": "The serum concentration of Digoxin can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00390", 
+      "name": "Digoxin"
+    }, 
+    {
+      "description": "The serum concentration of Enfuvirtide can be increased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00109", 
+      "name": "Enfuvirtide"
+    }, 
+    {
+      "description": "The serum concentration of Etravirine can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB06414", 
+      "name": "Etravirine"
+    }, 
+    {
+      "description": "Dasatinib may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01254", 
+      "name": "Dasatinib"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Deferasirox.", 
+      "drugbank-id": "DB01609", 
+      "name": "Deferasirox"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Deoxycholic Acid.", 
+      "drugbank-id": "DB03619", 
+      "name": "Deoxycholic Acid"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Ibritumomab tiuxetan.", 
+      "drugbank-id": "DB00078", 
+      "name": "Ibritumomab tiuxetan"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Ibrutinib is combined with Lepirudin.", 
+      "drugbank-id": "DB09053", 
+      "name": "Ibrutinib"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Nintedanib.", 
+      "drugbank-id": "DB09079", 
+      "name": "Nintedanib"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Obinutuzumab.", 
+      "drugbank-id": "DB08935", 
+      "name": "Obinutuzumab"
+    }, 
+    {
+      "description": "Sugammadex may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06206", 
+      "name": "Sugammadex"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Limaprost is combined with Lepirudin.", 
+      "drugbank-id": "DB09211", 
+      "name": "Limaprost"
+    }, 
+    {
+      "description": "Tibolone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09070", 
+      "name": "Tibolone"
+    }, 
+    {
+      "description": "Etanercept may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00005", 
+      "name": "Etanercept"
+    }, 
+    {
+      "description": "Masoprocol may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00179", 
+      "name": "Masoprocol"
+    }, 
+    {
+      "description": "Adapalene may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00210", 
+      "name": "Adapalene"
+    }, 
+    {
+      "description": "Mesalazine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00244", 
+      "name": "Mesalazine"
+    }, 
+    {
+      "description": "Indomethacin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00328", 
+      "name": "Indomethacin"
+    }, 
+    {
+      "description": "Pimecrolimus may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00337", 
+      "name": "Pimecrolimus"
+    }, 
+    {
+      "description": "Nabumetone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00461", 
+      "name": "Nabumetone"
+    }, 
+    {
+      "description": "Ketorolac may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00465", 
+      "name": "Ketorolac"
+    }, 
+    {
+      "description": "Tenoxicam may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00469", 
+      "name": "Tenoxicam"
+    }, 
+    {
+      "description": "Celecoxib may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00482", 
+      "name": "Celecoxib"
+    }, 
+    {
+      "description": "Tolmetin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00500", 
+      "name": "Tolmetin"
+    }, 
+    {
+      "description": "Rofecoxib may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00533", 
+      "name": "Rofecoxib"
+    }, 
+    {
+      "description": "Piroxicam may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00554", 
+      "name": "Piroxicam"
+    }, 
+    {
+      "description": "Fenoprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00573", 
+      "name": "Fenoprofen"
+    }, 
+    {
+      "description": "Valdecoxib may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00580", 
+      "name": "Valdecoxib"
+    }, 
+    {
+      "description": "Diclofenac may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00586", 
+      "name": "Diclofenac"
+    }, 
+    {
+      "description": "Sulindac may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00605", 
+      "name": "Sulindac"
+    }, 
+    {
+      "description": "Chloroquine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00608", 
+      "name": "Chloroquine"
+    }, 
+    {
+      "description": "Mycophenolate mofetil may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00688", 
+      "name": "Mycophenolate mofetil"
+    }, 
+    {
+      "description": "Flurbiprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00712", 
+      "name": "Flurbiprofen"
+    }, 
+    {
+      "description": "Naftifine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00735", 
+      "name": "Naftifine"
+    }, 
+    {
+      "description": "Zileuton may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00744", 
+      "name": "Zileuton"
+    }, 
+    {
+      "description": "Etodolac may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00749", 
+      "name": "Etodolac"
+    }, 
+    {
+      "description": "Olopatadine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00768", 
+      "name": "Olopatadine"
+    }, 
+    {
+      "description": "Mefenamic acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00784", 
+      "name": "Mefenamic acid"
+    }, 
+    {
+      "description": "Naproxen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00788", 
+      "name": "Naproxen"
+    }, 
+    {
+      "description": "Sulfasalazine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00795", 
+      "name": "Sulfasalazine"
+    }, 
+    {
+      "description": "Phenylbutazone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00812", 
+      "name": "Phenylbutazone"
+    }, 
+    {
+      "description": "Meloxicam may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00814", 
+      "name": "Meloxicam"
+    }, 
+    {
+      "description": "Carprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00821", 
+      "name": "Carprofen"
+    }, 
+    {
+      "description": "Diflunisal may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00861", 
+      "name": "Diflunisal"
+    }, 
+    {
+      "description": "Suprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00870", 
+      "name": "Suprofen"
+    }, 
+    {
+      "description": "Salicylic acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00936", 
+      "name": "Salicylic acid"
+    }, 
+    {
+      "description": "Meclofenamic acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00939", 
+      "name": "Meclofenamic acid"
+    }, 
+    {
+      "description": "Acetylsalicylic acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00945", 
+      "name": "Acetylsalicylic acid"
+    }, 
+    {
+      "description": "Bromfenac may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00963", 
+      "name": "Bromfenac"
+    }, 
+    {
+      "description": "Azelastine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00972", 
+      "name": "Azelastine"
+    }, 
+    {
+      "description": "Oxaprozin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00991", 
+      "name": "Oxaprozin"
+    }, 
+    {
+      "description": "Ketoprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01009", 
+      "name": "Ketoprofen"
+    }, 
+    {
+      "description": "Balsalazide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01014", 
+      "name": "Balsalazide"
+    }, 
+    {
+      "description": "Mycophenolic acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01024", 
+      "name": "Mycophenolic acid"
+    }, 
+    {
+      "description": "Ibuprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01050", 
+      "name": "Ibuprofen"
+    }, 
+    {
+      "description": "Leflunomide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01097", 
+      "name": "Leflunomide"
+    }, 
+    {
+      "description": "Olsalazine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01250", 
+      "name": "Olsalazine"
+    }, 
+    {
+      "description": "Lumiracoxib may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01283", 
+      "name": "Lumiracoxib"
+    }, 
+    {
+      "description": "Magnesium salicylate may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01397", 
+      "name": "Magnesium salicylate"
+    }, 
+    {
+      "description": "Salsalate may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01399", 
+      "name": "Salsalate"
+    }, 
+    {
+      "description": "Trisalicylate-choline may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01401", 
+      "name": "Choline magnesium trisalicylate"
+    }, 
+    {
+      "description": "Antipyrine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01435", 
+      "name": "Antipyrine"
+    }, 
+    {
+      "description": "Tiaprofenic acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01600", 
+      "name": "Tiaprofenic acid"
+    }, 
+    {
+      "description": "Etoricoxib may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01628", 
+      "name": "Etoricoxib"
+    }, 
+    {
+      "description": "Castanospermine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01816", 
+      "name": "Castanospermine"
+    }, 
+    {
+      "description": "Resveratrol may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB02709", 
+      "name": "Resveratrol"
+    }, 
+    {
+      "description": "Oxyphenbutazone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB03585", 
+      "name": "Oxyphenbutazone"
+    }, 
+    {
+      "description": "Niflumic Acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04552", 
+      "name": "Niflumic Acid"
+    }, 
+    {
+      "description": "Nimesulide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04743", 
+      "name": "Nimesulide"
+    }, 
+    {
+      "description": "Benoxaprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04812", 
+      "name": "Benoxaprofen"
+    }, 
+    {
+      "description": "Metamizole may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04817", 
+      "name": "Metamizole"
+    }, 
+    {
+      "description": "Zomepirac may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04828", 
+      "name": "Zomepirac"
+    }, 
+    {
+      "description": "Pirfenidone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04951", 
+      "name": "Pirfenidone"
+    }, 
+    {
+      "description": "SRT501 may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB05073", 
+      "name": "SRT501"
+    }, 
+    {
+      "description": "PTC299 may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB05173", 
+      "name": "PTC299"
+    }, 
+    {
+      "description": "Apremilast may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB05676", 
+      "name": "Apremilast"
+    }, 
+    {
+      "description": "HMPL-004 may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB05767", 
+      "name": "Andrographolide"
+    }, 
+    {
+      "description": "Icatibant may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06196", 
+      "name": "Icatibant"
+    }, 
+    {
+      "description": "exisulind may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06246", 
+      "name": "exisulind"
+    }, 
+    {
+      "description": "Lornoxicam may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06725", 
+      "name": "Lornoxicam"
+    }, 
+    {
+      "description": "Aceclofenac may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06736", 
+      "name": "Aceclofenac"
+    }, 
+    {
+      "description": "Zaltoprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06737", 
+      "name": "Zaltoprofen"
+    }, 
+    {
+      "description": "Seratrodast may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06739", 
+      "name": "Seratrodast"
+    }, 
+    {
+      "description": "Nepafenac may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06802", 
+      "name": "Nepafenac"
+    }, 
+    {
+      "description": "Azapropazone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB07402", 
+      "name": "Azapropazone"
+    }, 
+    {
+      "description": "Tranilast may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB07615", 
+      "name": "Tranilast"
+    }, 
+    {
+      "description": "Parecoxib may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08439", 
+      "name": "Parecoxib"
+    }, 
+    {
+      "description": "Salicylamide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08797", 
+      "name": "Salicylamide"
+    }, 
+    {
+      "description": "Teriflunomide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08880", 
+      "name": "Teriflunomide"
+    }, 
+    {
+      "description": "D-Limonene may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08921", 
+      "name": "D-Limonene"
+    }, 
+    {
+      "description": "Kebuzone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08940", 
+      "name": "Kebuzone"
+    }, 
+    {
+      "description": "Isoxicam may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08942", 
+      "name": "Isoxicam"
+    }, 
+    {
+      "description": "Indoprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08951", 
+      "name": "Indoprofen"
+    }, 
+    {
+      "description": "Ibuproxam may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08955", 
+      "name": "Ibuproxam"
+    }, 
+    {
+      "description": "Floctafenine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08976", 
+      "name": "Floctafenine"
+    }, 
+    {
+      "description": "Fenbufen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08981", 
+      "name": "Fenbufen"
+    }, 
+    {
+      "description": "Etofenamate may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08984", 
+      "name": "Etofenamate"
+    }, 
+    {
+      "description": "Epirizole may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08991", 
+      "name": "Epirizole"
+    }, 
+    {
+      "description": "Loxoprofen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09212", 
+      "name": "Loxoprofen"
+    }, 
+    {
+      "description": "Droxicam may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09215", 
+      "name": "Droxicam"
+    }, 
+    {
+      "description": "Tolfenamic Acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09216", 
+      "name": "Tolfenamic Acid"
+    }, 
+    {
+      "description": "Clonixin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09218", 
+      "name": "Clonixin"
+    }, 
+    {
+      "description": "Propacetamol may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09288", 
+      "name": "Propacetamol"
+    }, 
+    {
+      "description": "Evening primrose oil may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11358", 
+      "name": "Evening primrose oil"
+    }, 
+    {
+      "description": "Orgotein may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11444", 
+      "name": "Orgotein"
+    }, 
+    {
+      "description": "Tepoxalin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11466", 
+      "name": "Tepoxalin"
+    }, 
+    {
+      "description": "Flunixin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11518", 
+      "name": "Flunixin"
+    }, 
+    {
+      "description": "Curcumin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11672", 
+      "name": "Curcumin"
+    }, 
+    {
+      "description": "E6201 may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11687", 
+      "name": "E-6201"
+    }, 
+    {
+      "description": "Duvelisib may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11952", 
+      "name": "Duvelisib"
+    }, 
+    {
+      "description": "Bucillamine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12160", 
+      "name": "Bucillamine"
+    }, 
+    {
+      "description": "Lisofylline may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12406", 
+      "name": "Lisofylline"
+    }, 
+    {
+      "description": "Betulinic Acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12480", 
+      "name": "Betulinic Acid"
+    }, 
+    {
+      "description": "Ebselen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12610", 
+      "name": "Ebselen"
+    }, 
+    {
+      "description": "Acetovanillone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12618", 
+      "name": "Apocynin"
+    }, 
+    {
+      "description": "Higenamine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12779", 
+      "name": "Higenamine"
+    }, 
+    {
+      "description": "Tinoridine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB13001", 
+      "name": "Tinoridine"
+    }, 
+    {
+      "description": "Anisodamine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11785", 
+      "name": "Anisodamine"
+    }, 
+    {
+      "description": "Nitroaspirin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12445", 
+      "name": "Nitroaspirin"
+    }, 
+    {
+      "description": "Nafamostat may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12598", 
+      "name": "Nafamostat"
+    }, 
+    {
+      "description": "Mizoribine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12617", 
+      "name": "Mizoribine"
+    }, 
+    {
+      "description": "Omega-3 fatty acids may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11133", 
+      "name": "Omega-3 fatty acids"
+    }, 
+    {
+      "description": "Vitamin E may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00163", 
+      "name": "Vitamin E"
+    }, 
+    {
+      "description": "The risk or severity of adverse effects can be increased when Lepirudin is combined with Tositumomab.", 
+      "drugbank-id": "DB00081", 
+      "name": "Tositumomab"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Bivalirudin.", 
+      "drugbank-id": "DB00006", 
+      "name": "Bivalirudin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Abciximab.", 
+      "drugbank-id": "DB00054", 
+      "name": "Abciximab"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Becaplermin.", 
+      "drugbank-id": "DB00102", 
+      "name": "Becaplermin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Dicoumarol.", 
+      "drugbank-id": "DB00266", 
+      "name": "Dicoumarol"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Argatroban.", 
+      "drugbank-id": "DB00278", 
+      "name": "Argatroban"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Ardeparin.", 
+      "drugbank-id": "DB00407", 
+      "name": "Ardeparin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Phenindione.", 
+      "drugbank-id": "DB00498", 
+      "name": "Phenindione"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Fondaparinux sodium.", 
+      "drugbank-id": "DB00569", 
+      "name": "Fondaparinux sodium"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Warfarin.", 
+      "drugbank-id": "DB00682", 
+      "name": "Warfarin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Phenprocoumon.", 
+      "drugbank-id": "DB00946", 
+      "name": "Phenprocoumon"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Edetic Acid.", 
+      "drugbank-id": "DB00974", 
+      "name": "Edetic Acid"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Heparin.", 
+      "drugbank-id": "DB01109", 
+      "name": "Heparin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Enoxaparin.", 
+      "drugbank-id": "DB01225", 
+      "name": "Enoxaparin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Acenocoumarol.", 
+      "drugbank-id": "DB01418", 
+      "name": "Acenocoumarol"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Citric Acid.", 
+      "drugbank-id": "DB04272", 
+      "name": "Citric Acid"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Ximelagatran.", 
+      "drugbank-id": "DB04898", 
+      "name": "Ximelagatran"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Ancrod.", 
+      "drugbank-id": "DB05099", 
+      "name": "Ancrod"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Sulodexide.", 
+      "drugbank-id": "DB06271", 
+      "name": "Sulodexide"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Otamixaban.", 
+      "drugbank-id": "DB06635", 
+      "name": "Otamixaban"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Danaparoid.", 
+      "drugbank-id": "DB06754", 
+      "name": "Danaparoid"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Dalteparin.", 
+      "drugbank-id": "DB06779", 
+      "name": "Dalteparin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Ethyl biscoumacetate.", 
+      "drugbank-id": "DB08794", 
+      "name": "Ethyl biscoumacetate"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Nadroparin.", 
+      "drugbank-id": "DB08813", 
+      "name": "Nadroparin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Dextran.", 
+      "drugbank-id": "DB09255", 
+      "name": "Dextran"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Reviparin.", 
+      "drugbank-id": "DB09259", 
+      "name": "Reviparin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Certoparin.", 
+      "drugbank-id": "DB09261", 
+      "name": "Certoparin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Dextran 70.", 
+      "drugbank-id": "DB11076", 
+      "name": "Dextran 70"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Desirudin.", 
+      "drugbank-id": "DB11095", 
+      "name": "Desirudin"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Dextran 40.", 
+      "drugbank-id": "DB11122", 
+      "name": "Dextran 40"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Dextran 75.", 
+      "drugbank-id": "DB11241", 
+      "name": "Dextran 75"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Protocatechualdehyde.", 
+      "drugbank-id": "DB11268", 
+      "name": "Protocatechualdehyde"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Protein C.", 
+      "drugbank-id": "DB11312", 
+      "name": "Protein C"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Antithrombin III human.", 
+      "drugbank-id": "DB11598", 
+      "name": "Antithrombin III human"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of idraparinux.", 
+      "drugbank-id": "DB06406", 
+      "name": "Idraparinux"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Fondaparinux.", 
+      "drugbank-id": "DB11728", 
+      "name": "Fondaparinux"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Ym150.", 
+      "drugbank-id": "DB12289", 
+      "name": "Darexaban"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Gabexate.", 
+      "drugbank-id": "DB12831", 
+      "name": "Gabexate"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Fluindione.", 
+      "drugbank-id": "DB13136", 
+      "name": "Fluindione"
+    }, 
+    {
+      "description": "Lepirudin may increase the anticoagulant activities of Protein S human.", 
+      "drugbank-id": "DB13149", 
+      "name": "Protein S human"
+    }, 
+    {
+      "description": "Aminosalicylic Acid may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00233", 
+      "name": "Aminosalicylic Acid"
+    }, 
+    {
+      "description": "dersalazine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06251", 
+      "name": "dersalazine"
+    }, 
+    {
+      "description": "Alteplase may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00009", 
+      "name": "Alteplase"
+    }, 
+    {
+      "description": "Reteplase may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00015", 
+      "name": "Reteplase"
+    }, 
+    {
+      "description": "Anistreplase may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00029", 
+      "name": "Anistreplase"
+    }, 
+    {
+      "description": "Tenecteplase may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00031", 
+      "name": "Tenecteplase"
+    }, 
+    {
+      "description": "Drotrecogin alfa may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00055", 
+      "name": "Drotrecogin alfa"
+    }, 
+    {
+      "description": "Streptokinase may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00086", 
+      "name": "Streptokinase"
+    }, 
+    {
+      "description": "Ticlopidine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00208", 
+      "name": "Ticlopidine"
+    }, 
+    {
+      "description": "Anagrelide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00261", 
+      "name": "Anagrelide"
+    }, 
+    {
+      "description": "Rosiglitazone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00412", 
+      "name": "Rosiglitazone"
+    }, 
+    {
+      "description": "Tirofiban may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00775", 
+      "name": "Tirofiban"
+    }, 
+    {
+      "description": "Cilostazol may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01166", 
+      "name": "Cilostazol"
+    }, 
+    {
+      "description": "Desmoteplase may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04925", 
+      "name": "Desmoteplase"
+    }, 
+    {
+      "description": "Defibrotide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04932", 
+      "name": "Defibrotide"
+    }, 
+    {
+      "description": "Plasmin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB05254", 
+      "name": "Fibrinolysin"
+    }, 
+    {
+      "description": "ALX-0081 may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06081", 
+      "name": "ALX-0081"
+    }, 
+    {
+      "description": "Astaxanthin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06543", 
+      "name": "Astaxanthin"
+    }, 
+    {
+      "description": "Tinzaparin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06822", 
+      "name": "Tinzaparin"
+    }, 
+    {
+      "description": "Batroxobin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09005", 
+      "name": "Batroxobin"
+    }, 
+    {
+      "description": "Eptifibatide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00063", 
+      "name": "Eptifibatide"
+    }, 
+    {
+      "description": "Treprostinil may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00374", 
+      "name": "Treprostinil"
+    }, 
+    {
+      "description": "Clopidogrel may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00758", 
+      "name": "Clopidogrel"
+    }, 
+    {
+      "description": "Dipyridamole may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00975", 
+      "name": "Dipyridamole"
+    }, 
+    {
+      "description": "Iloprost may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01088", 
+      "name": "Iloprost"
+    }, 
+    {
+      "description": "Epoprostenol may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01240", 
+      "name": "Epoprostenol"
+    }, 
+    {
+      "description": "Beraprost may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB05229", 
+      "name": "Beraprost"
+    }, 
+    {
+      "description": "Prasugrel may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06209", 
+      "name": "Prasugrel"
+    }, 
+    {
+      "description": "Cangrelor may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06441", 
+      "name": "Cangrelor"
+    }, 
+    {
+      "description": "Triflusal may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08814", 
+      "name": "Triflusal"
+    }, 
+    {
+      "description": "Ticagrelor may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08816", 
+      "name": "Ticagrelor"
+    }, 
+    {
+      "description": "Ditazole may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08994", 
+      "name": "Ditazole"
+    }, 
+    {
+      "description": "Bemiparin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09258", 
+      "name": "Bemiparin"
+    }, 
+    {
+      "description": "Parnaparin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09260", 
+      "name": "Parnaparin"
+    }, 
+    {
+      "description": "Selexipag may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB11362", 
+      "name": "Selexipag"
+    }, 
+    {
+      "description": "eplivanserine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB06392", 
+      "name": "eplivanserine"
+    }, 
+    {
+      "description": "Indobufen may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12545", 
+      "name": "Indobufen"
+    }, 
+    {
+      "description": "Kct 0809 may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12017", 
+      "name": "Ozagrel"
+    }, 
+    {
+      "description": "Milrinone may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00235", 
+      "name": "Milrinone"
+    }, 
+    {
+      "description": "Epinastine may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00751", 
+      "name": "Epinastine"
+    }, 
+    {
+      "description": "Alprostadil may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00770", 
+      "name": "Alprostadil"
+    }, 
+    {
+      "description": "Pentoxifylline may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB00806", 
+      "name": "Pentoxifylline"
+    }, 
+    {
+      "description": "Ridogrel may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01207", 
+      "name": "Ridogrel"
+    }, 
+    {
+      "description": "Sevoflurane may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB01236", 
+      "name": "Sevoflurane"
+    }, 
+    {
+      "description": "Tesmilifene may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB04905", 
+      "name": "Tesmilifene"
+    }, 
+    {
+      "description": "Ibudilast may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB05266", 
+      "name": "Ibudilast"
+    }, 
+    {
+      "description": "Icosapent ethyl may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08887", 
+      "name": "Icosapent ethyl"
+    }, 
+    {
+      "description": "Ifenprodil may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB08954", 
+      "name": "Ifenprodil"
+    }, 
+    {
+      "description": "Trapidil may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB09283", 
+      "name": "Trapidil"
+    }, 
+    {
+      "description": "Ketanserin may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12465", 
+      "name": "Ketanserin"
+    }, 
+    {
+      "description": "Ramatroban may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB13036", 
+      "name": "Ramatroban"
+    }, 
+    {
+      "description": "Butylphthalide may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12749", 
+      "name": "Butylphthalide"
+    }, 
+    {
+      "description": "Naftopidil may increase the anticoagulant activities of Lepirudin.", 
+      "drugbank-id": "DB12092", 
+      "name": "Naftopidil"
+    }, 
+    {
+      "description": "The serum concentration of Theophylline can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00277", 
+      "name": "Theophylline"
+    }, 
+    {
+      "description": "The serum concentration of Dyphylline can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00651", 
+      "name": "Dyphylline"
+    }, 
+    {
+      "description": "The serum concentration of Aminophylline can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB01223", 
+      "name": "Aminophylline"
+    }, 
+    {
+      "description": "The serum concentration of Ambroxol acefyllinate can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB13141", 
+      "name": "Ambroxol acefyllinate"
+    }, 
+    {
+      "description": "The serum concentration of Valproic Acid can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00313", 
+      "name": "Valproic Acid"
+    }, 
+    {
+      "description": "The serum concentration of Zidovudine can be decreased when it is combined with Lepirudin.", 
+      "drugbank-id": "DB00495", 
+      "name": "Zidovudine"
+    }
+  ], 
+  "toxicity": "In case of overdose (eg, suggested by excessively high aPTT values) the risk of bleeding is increased.", 
+  "atc-code": {
+    "@code": "B01AE02", 
+    "level": [
+      {
+        "@code": "B01AE", 
+        "#text": "Direct thrombin inhibitors"
+      }, 
+      {
+        "@code": "B01A", 
+        "#text": "ANTITHROMBOTIC AGENTS"
+      }, 
+      {
+        "@code": "B01", 
+        "#text": "ANTITHROMBOTIC AGENTS"
+      }, 
+      {
+        "@code": "B", 
+        "#text": "BLOOD AND BLOOD FORMING ORGANS"
+      }
+    ]
+  }, 
+  "volume-of-distribution": "* 12.2 L [Healthy young subjects (n = 18, age 18-60 years)]\r\n* 18.7 L [Healthy elderly subjects (n = 10, age 65-80 years)]\r\n* 18 L [Renally impaired patients (n = 16, creatinine clearance below 80 mL/min)]\r\n* 32.1 L [HIT patients (n = 73)]"
+}
