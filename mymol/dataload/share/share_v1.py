@@ -46,13 +46,13 @@ def buildSubDir(name):
 
 def initLogFile(parser,modelname,storedir,mt=None,rawdir=None):
 
-    if parser == 'chebi':
+    if parser in[ 'chebi' , 'drugbank']:
 
         # create a log file (json) , to record the data edition and update date
-        with open(pjoin(storedir,'chebi.log'),'w') as wf:
+        with open(pjoin(storedir,'{}.log'.format(parser)),'w') as wf:
 
             json.dump([
-                ('edition','update date','chebi_v*'),
+                ('version','update date','{}_v*'.format(parser)),
                 (mt,today,modelname),],wf,indent=2)
 
     elif parser == 'pubchem':
@@ -76,7 +76,6 @@ def initLogFile(parser,modelname,storedir,mt=None,rawdir=None):
                 log_dict[name].append((mt,today))
 
             json.dump(log_dict,wf,indent=2)
-
 
 def lookforExisted(datadir,dirnamehead):
 
@@ -276,20 +275,23 @@ def dataFromDB(database,colnamehead,querykey,queryvalue=None):
 
     print '*'*80
 
+    smiles = ['PUBCHEM_OPENEYE_STANDARD_SMILES','Standard_SMILES']
     while True:
 
-        queryvalue = str(raw_input('input smiles (q to quit) : '))
+        queryvalue = str(raw_input('input %s  (q to quit) : ' %  querykey))
         
         if queryvalue == 'q' or queryvalue =='Q':
 
             break
 
-        try:
-            queryvalue = neutrCharge(queryvalue)
+        elif querykey in smiles:
+            
+            try:
+                queryvalue = neutrCharge(queryvalue)
 
-        except Exception,e:
+            except Exception,e:
 
-            print e
+                print e
         
         docs = col.find({querykey:queryvalue})
        
@@ -315,6 +317,60 @@ def dataFromDB(database,colnamehead,querykey,queryvalue=None):
             print 'No record'
 
         print '-'*80
+
+def deBlankDict(dic):
+    '''
+    this function is to 
+    a. delete key from dic if val is None
+    b. if val is list but only contain  a element  so list transfer to this element
+    c. if val is list  and have multi elements ,first dedup ,an then  if dict included , iterate to deblank
+    d. if val is dict but only have one key , so ,delete the key from parent-dict and update with sub-dict
+    '''
+    
+    for key,val in dic.items():
+
+        if not val:
+            
+            dic.pop(key)
+
+        elif isinstance(val,list):
+
+            if len(val) == 1:
+
+                dic[key] =val[0]
+
+            else:
+                # dedup
+                _val = list()
+
+                for v in val:
+
+                    if v not in _val:
+
+                        if isinstance(v,dict):
+
+                            v = deBlankDict(v)
+
+                        _val.append(v)
+
+                dic[key] = _val
+
+        elif isinstance(val,dict):
+
+            if len(val.keys()) ==1:
+
+                val_key = val.keys()[0]
+
+                val_val = val[val_key]
+
+                dic.pop(key)
+
+                dic[val_key] = val_val
+
+            else:
+                deBlankDict(val)
+
+    return dic
 
 def main():
 
