@@ -46,14 +46,14 @@ def  downloadData(redownload = False,rawdir=None):
     '''
     if  not redownload:
 
-        (choice,existPubChemFile) = lookforExisted(dataraw,'pubchem')
+        (choice,existPubChemFile) = lookforExisted(pubchem_raw,'pubchem')
 
         if choice != 'y':
             return
 
     if redownload or not existPubChemFile or  choice == 'y':
 
-        rawdir = pjoin(dataraw,'pubchem_{}'.format(now))
+        rawdir = pjoin(pubchem_raw,'pubchem_{}'.format(now))
 
         createDir(rawdir)
 
@@ -107,7 +107,7 @@ def extractData(rawdir=None,storedir=None,latest = False):
 
         t = psplit(rawdir)[1].strip().rsplit('_')[1].strip()
 
-        storedir = pjoin(datastore,'pubchem_{}'.format(t))
+        storedir = pjoin(pubchem_store,'pubchem_{}'.format(t))
 
         createDir(storedir)
 
@@ -131,7 +131,7 @@ def extractData(rawdir=None,storedir=None,latest = False):
 
     else:
         # check  to see if there have been an edition
-        existPubChemFile = filter(lambda x:x.startswith('pubchem'),listdir(dataraw))
+        existPubChemFile = filter(lambda x:x.startswith('pubchem'),listdir(pubchem_raw))
 
         # if not exists, download befor next step
         if latest or not existPubChemFile:
@@ -142,7 +142,7 @@ def extractData(rawdir=None,storedir=None,latest = False):
 
             t = psplit(rawdir)[1].strip().rsplit('_')[1].strip()
 
-            storedir = pjoin(datastore,'pubchem_{}'.format(t))
+            storedir = pjoin(pubchem_store,'pubchem_{}'.format(t))
 
             createDir(storedir)
 
@@ -167,9 +167,9 @@ def extractData(rawdir=None,storedir=None,latest = False):
 
                 return
 
-            rawdir =  pjoin(dataraw,existPubChemFile[edition])
+            rawdir =  pjoin(pubchem_raw,existPubChemFile[edition])
 
-            storedir = pjoin(datastore,existPubChemFile[edition])
+            storedir = pjoin(pubchem_store,existPubChemFile[edition])
 
             createDir(storedir)
 
@@ -418,14 +418,14 @@ def insertUpdatedData(latest_file):
         # all file name in new vrsion
     insertFiles = latest_file.values()
 
-    pubchem_storedirs =[dir_name for dir_name in listdir(datastore) if dir_name.startswith('pubchem')]
+    pubchem_storedirs =[dir_name for dir_name in listdir(pubchem_store) if dir_name.startswith('pubchem')]
 
     num = 0
 
     # circulate to insert all files in insertFiles
     for _dir  in pubchem_storedirs:
 
-        dir_path = pjoin(datastore,_dir)
+        dir_path = pjoin(pubchem_store,_dir)
 
         for filename in listdir(dir_path):
 
@@ -487,8 +487,8 @@ def updateData():
     num = 0
 
     # create a dir to store updated data
-    updated_data_raw  = pjoin(dataraw,'pubchem_update_{}'.format(today))
-    updated_data_store  = pjoin(datastore,'pubchem_update_{}'.format(today))
+    updated_data_raw  = pjoin(pubchem_raw,'pubchem_update_{}'.format(today))
+    updated_data_store  = pjoin(pubchem_store,'pubchem_update_{}'.format(today))
 
     createDir(updated_data_raw)
     createDir(updated_data_store)

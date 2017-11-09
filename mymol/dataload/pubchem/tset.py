@@ -112,19 +112,6 @@ def down(ftp,name,save_dir,bufsize):
 
         ftp.set_debuglevel(0)
 
-def connectFTP():
-    '''
-    this function is to connect pubchem conpound ftp site 
-    '''
-    ftp_server = 'ftp.ncbi.nlm.nih.gov'
-
-    ftp = FTP(ftp_server)
-
-    ftp.login('anonymous','')
-
-    ftp.cwd('/pubchem/Compound/CURRENT-Full/SDF/')
-
-    return ftp
 
 def dedup():
 
@@ -232,6 +219,7 @@ def testInsert():
             except Exception,e:
                 print e
                 print '-'*50
+                
 if __name__ == '__main__':
 
     # dedup()
